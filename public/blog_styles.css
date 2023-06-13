@@ -1,0 +1,26 @@
+a {
+  color: var(--dark);
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 3em;
+}
+
+p {
+  color: black;
+  opacity: .7;
+}
+
+code {
+  font-family: ibm-plex-mono, monospace;
+}
+
+body .page-columns {
+  /*grid-template-columns: [screen-start] 0 [screen-start-inset] 0 [page-start page-start-inset] 0 [body-start-outset] 0 [body-start] 0 [body-content-start] minmax(500px, calc( 850px - 3em )) [body-content-end] 1.5em [body-end] 35px [body-end-outset] minmax(65px, 135px) [page-end-inset] 0 [page-end] 0 [screen-end-inset] 0 [screen-end];*/
+  grid-template-columns: [screen-start] 0 [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0px, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] .2vw [screen-end]
+}
+
+#TOC {
+    display:none
+}

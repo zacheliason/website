@@ -1,0 +1,46 @@
+a {
+  color: var(--dark);
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 3em;
+}
+
+/*select all h3 not in #bar-container */
+h3:not(#bar-container h3) {
+  font-family: ibm-plex-serif, serif !important;
+}
+
+h2, h4, h5, h6 {
+  font-family: ibm-plex-serif, serif !important;
+}
+
+body .page-columns {
+  grid-template-columns: [screen-start] 0 [screen-start-inset] 0 [page-start page-start-inset] 0 [body-start-outset] 0 [body-start] 0 [body-content-start] minmax(500px, calc( 850px - 3em )) [body-content-end] 1.5em [body-end] 35px [body-end-outset] minmax(65px, 135px) [page-end-inset] 0 [page-end] 0 [screen-end-inset] 0 [screen-end];
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active, .sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
+  border-left: 1px solid #e9ecef;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active, .sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
+  color: black !important;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active:hover, .sidebar nav[role="doc-toc"] ul > li > ul > li > a.active:hover {
+  color: var(--bright) !important;
+}
+
+.sidebar .quarto-alternate-notebooks ul li a:hover, .sidebar .quarto-alternate-formats ul li a:hover, .sidebar nav[role="doc-toc"] > ul li a:hover {
+  color: var(--bright) !important;
+}
+
+@media (max-width: 500px) {
+  body .page-columns {
+      grid-template-columns: [screen-start] .2vw [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0px, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] .2vw [screen-end]
+    /*grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset] 35px [body-start-outset] 35px [body-start] 1.5em [body-content-start] minmax(500px, calc( 850px - 3em )) [body-content-end] 1.5em [body-end] 35px [body-end-outset] minmax(75px, 145px) [page-end-inset] 35px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];*/
+  }
+
+
+}
