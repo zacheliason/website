@@ -10,6 +10,7 @@ npm run build
 sleep 20
 echo "dist built"
 
+ls dist/images/*
 cp -R dist/* /Users/zacheliason/Documents/website/zacheliason.github.io
 
 cd /Users/zacheliason/Documents/website/zacheliason.github.io

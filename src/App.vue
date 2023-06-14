@@ -84,7 +84,7 @@
         <a target="_blank" href="https://github.com/zacheliason/">github</a>
       </div>
       <div id="sitecode">
-        <a target="_blank" href="https://github.com/zacheliason/zach_website"
+        <a target="_blank" href="https://github.com/zacheliason/website"
           >[site code]</a
         >
       </div>
