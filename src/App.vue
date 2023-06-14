@@ -78,7 +78,7 @@
         >
       </div>
       <div>
-        <a target="_blank" href="https://twitter.com/zachs_not_here">twitter</a>
+        <a target="_blank" href="https://twitter.com/zacheliason">twitter</a>
       </div>
       <div>
         <a target="_blank" href="https://github.com/zacheliason/">github</a>

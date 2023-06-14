@@ -20,9 +20,7 @@ export default {
   name: "Design",
   methods: {
     format_date(d) {
-      let date = d.split("T")[0];
-      let parts = date.split("-");
-      return parts[1] + "/" + parts[2] + "/" + parts[0];
+      return d;
     },
   },
   computed: {
