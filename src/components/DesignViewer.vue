@@ -8,7 +8,7 @@
     <div class="parent container" ref="container">
       <div class="image-box">
         <img v-for="image in design.images" :src="'/images/' + image" />
-        <div class="bottom-spacer not_on_mobile"></div>
+        <div class="bottom-spacer not-on-mobile"></div>
       </div>
 
       <div class="description">
@@ -43,8 +43,10 @@ export default {
   methods: {
     adjustContainerHeight() {
       const container = this.$refs.container;
-      if (container) {
-        container.style.height = container.scrollHeight + 'px';
+      if (!window.matchMedia("(max-width: 767px)").matches) {
+        if (container) {
+          container.style.height = container.scrollHeight + 'px';
+        }
       }
     },
     format_date(d) {
@@ -131,6 +133,10 @@ hr {
     display: block;
     position: unset;
     width: 100%;
+  }
+
+  .parent {
+    height: unset;
   }
 }
 </style>

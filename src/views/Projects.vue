@@ -230,6 +230,19 @@ h1:hover {
   .date {
     padding: 0;
   }
-}
 
+  a:hover {
+    text-decoration: unset;
+    border-bottom: unset;
+  }
+
+  .tag:hover, .active {
+    background-color: unset;
+    color: unset;
+  }
+
+  h1:hover {
+    font-style: unset;
+  }
+}
 </style>

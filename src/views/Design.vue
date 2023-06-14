@@ -43,6 +43,7 @@ export default {
 
 .design-item {
   position: relative;
+  width: 100%;
   flex: 1 0 calc(var(--site-width) / 4); /* Set each item to occupy 33.33% of the container width (minus the gap) */
   height: calc(var(--site-width) / 3);
   background-position: center;
@@ -112,6 +113,7 @@ export default {
 
 @media (max-width: 768px) {
   .mosaic-container {
+    position: relative;
     justify-content: center; /* Center the items */
   }
 
@@ -120,15 +122,31 @@ export default {
     height: calc(var(--site-width) * 1.5);
   }
 
-
   .design-item::before {
     background-color: var(--bright);
-    opacity: .7;
+    opacity: .8;
+    height: 6em;
+    bottom: 0;
+    top: unset;
   }
 
   .design-info {
     color: white;
     opacity: 1;
+  }
+
+  .design-item:hover .design-info {
+    opacity: unset;
+  }
+
+  .design-item:hover::before {
+    background-color: unset;
+    opacity: unset;
+  }
+
+  .design-item:hover {
+    background-color: unset;
+    color: unset;
   }
 }
 </style>

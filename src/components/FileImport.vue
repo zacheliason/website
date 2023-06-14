@@ -2,8 +2,8 @@
   <div>
     <div class="mobile">
       <div class="">
-        <p>This app doesn't work on mobile!</p>
-        <router-link to="/">[home]</router-link>
+        <h1>This app doesn't work on mobile!</h1>
+        <router-link class="next-button" to="/projects"><h2>« Back</h2></router-link>
       </div>
     </div>
 
