@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="top-spacer"></div>
-        <h1>Hi! My name is Zach and I just finished an undergrad in Bioinformatics. I enjoy coding solutions to real-world problems—particularly in <router-link to="/">cancer immunology</router-link> and <router-link to="/">genomics</router-link> research. {{ earth }}</h1>
+        <h1>Hi! My name is Zach and I recently completed a Bachelor of Science (B.S.) degree in Bioinformatics. I enjoy coding solutions to real-world problems—particularly in <router-link to="/">cancer immunology</router-link> and <router-link to="/">genomics</router-link> research. {{ earth }}</h1>
         <h1>See more <router-link to="/about">here »</router-link></h1>
         <div class="bottom-spacer"></div>
 

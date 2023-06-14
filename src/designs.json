@@ -1,5 +1,46 @@
 [
     {
+        "name": "\"And Above the Dnipro\" Print",
+        "description": "",
+        "images": [
+            "dnipro1.jpeg",
+            "dnipro2.jpeg"
+        ],
+        "date": "04/02/2023"
+    },
+    {
+        "name": "Talking Heads Print",
+        "description": "",
+        "images": [
+            "sky4.jpeg",
+            "sky2.jpeg",
+            "sky1.jpeg"
+        ],
+        "date": "04/09/2023"
+    },
+    {
+        "name": "Eden Print",
+        "description": "",
+        "images": [
+            "stlouis1.jpeg",
+            "stlouis2.jpg",
+            "stlouis3.jpg",
+            "stlouis4.jpg",
+            "stlouis5.jpg",
+            "stlouis6.jpg"
+        ],
+        "date": "02/12/2023"
+    },
+    {
+        "name": "Vivian Park Print",
+        "description": "",
+        "images": [
+            "vivian2.jpeg",
+            "vivian1.jpeg"
+        ],
+        "date": "02/22/2023"
+    },
+    {
         "name": "Collages from DSGN110",
         "description": "",
         "images": [
@@ -10,8 +51,8 @@
         "date": "10/01/2019"
     },
     {
-        "name": "Kiev Photos 2020-2021",
-        "description": "Color and B&W film mostly from the summer of 2020.",
+        "name": "Kiev88 Photos 2020-2021",
+        "description": "Color and B&W film I took on my Kiev88 camera mostly during the summer of 2020.",
         "images": [
             "kiev4_1.jpg",
             "kiev4_3.jpg",
@@ -43,7 +84,6 @@
         ],
         "date": "12/25/2020"
     },
-
     {
         "name": "Final for DSGN110",
         "description": "",

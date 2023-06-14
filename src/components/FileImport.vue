@@ -736,10 +736,6 @@ label:hover {
   color: var(--bright);
 }
 
-a:hover {
-  mix-blend-mode: difference;
-}
-
 text {
   color: black;
   background-color: purple;
@@ -849,8 +845,8 @@ img {
     left: 0;
     text-align: center;
   }
-  .mobile p {
-    padding: 2em;
+  .mobile  {
+    padding: 4em;
   }
 }
 </style>

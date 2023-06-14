@@ -29,11 +29,11 @@
     </div>
 
     <div id="mobile-bar">
-        <router-link class="mono" to="/">🏠</router-link> |
-        <router-link class="mono" to="/projects">🤖 <span class="show-on-active">projects</span></router-link> |
-        <router-link class="mono" to="/design">💿 <span class="show-on-active">design</span></router-link> |
-        <router-link class="mono" to="/about">🙇‍♂️ <span class="show-on-active">about</span></router-link> |
-        <router-link class="mono" to="/blog">✍️ <span class="show-on-active">blog</span></router-link>
+      <router-link class="mobile-link" to="/"><div>🏠</div><div class="show-on-exact-active">home</div></router-link> |
+      <router-link class="mobile-link" to="/projects"><div>🤖</div> <div class="show-on-active">projects</div></router-link> |
+      <router-link class="mobile-link" to="/design"><div>💿</div> <div class="show-on-active">design</div></router-link> |
+      <router-link class="mobile-link" to="/about">🙇‍♂️ <div class="show-on-active">about</div></router-link> |
+      <router-link class="mobile-link" to="/blog">✍️ <div class="show-on-active">blog</div></router-link>
     </div>
 
     <div id="router-view" >
@@ -87,12 +87,8 @@ export default {
       path = path.replace("design", "💿");
       path = path.replace("blog", "✍️");
       path = path.replace("about", "🙇‍♂️");
-      path = path.replace("HIDE_", "");
       path = path.replaceAll(" ", "_");
 
-      if (path.length > 28) {
-         path = path.slice(0,28) + "..."
-      }
       return path;
     }
   },
@@ -143,10 +139,11 @@ h2 {
 }
 
 h1 {
+  margin-top: 0;
   font-family: ibm-plex-serif, serif;
   font-style: normal;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .date {
@@ -217,7 +214,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: var(--dark);
+  color: var(--bright);
 }
 
 #bar-container {
@@ -338,8 +335,22 @@ h2 {
   font-weight: 200;
 }
 
-.show-on-active {
+.show-on-active, .show-on-exact-active {
   display: none;
+}
+
+a.bar-h3 h3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(.5 * var(--site-width));
+}
+
+.mobile-link {
+  display: flex;
+  color: var(--dark);
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -421,10 +432,6 @@ h2 {
     margin-bottom: .5em;
   }
 
-  .top-spacer {
-    display: none;
-  }
-
   h1 {
     font-size:2em !important;
   }
@@ -432,6 +439,11 @@ h2 {
   .router-link-active .show-on-active {
     display: inline-block;
   }
+
+  .router-link-exact-active .show-on-exact-active {
+    display: inline-block;
+  }
+
 
   a:not(.emoji):hover {
     text-decoration: unset;
