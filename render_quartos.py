@@ -4,7 +4,6 @@ from datetime import datetime
 import shutil
 import json
 
-print("here")
 
 def json_serial(obj):
     if isinstance(obj, datetime):

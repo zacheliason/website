@@ -214,7 +214,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: var(--bright);
+  color: var(--dark);
 }
 
 #bar-container {
@@ -354,6 +354,10 @@ a.bar-h3 h3{
 }
 
 @media screen and (max-width: 1000px) {
+  a {
+    color: var(--bright);
+  }
+
   footer {
     font-size: unset;
     position: unset;
