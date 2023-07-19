@@ -21,9 +21,11 @@
             <router-link to="/about" class="emoji" id="emoji-about">🙇‍♂️</router-link>
           </div>
 
+<!--
           <div @mouseover="emoji('blog')" @mouseleave="leaveemoji('blog')">
             <router-link to="/blog" class="emoji" id="emoji-blog">✍️</router-link>
           </div>
+-->
         </div>
       </div>
     </div>
@@ -142,7 +144,7 @@ h1 {
   margin-top: 0;
   font-family: ibm-plex-serif, serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 2.5em;
 }
 

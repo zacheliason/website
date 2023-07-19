@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-cd /Users/zacheliason/Documents/website/newweb/
+cd ~/Documents/website/zacheliason_dot_com/
 
 python3 render_quartos.py
 
@@ -18,4 +18,4 @@ sleep .2
 bash git.sh
 sleep 2
 echo "git committed"
-echo "put down that cocktail!"
+echo "update complete"
