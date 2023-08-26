@@ -34,10 +34,12 @@
       <router-link class="mobile-link" to="/"><div>🏠</div><div class="show-on-exact-active">home</div></router-link> |
       <router-link class="mobile-link" to="/projects"><div>🤖</div> <div class="show-on-active">projects</div></router-link> |
       <router-link class="mobile-link" to="/design"><div>💿</div> <div class="show-on-active">design</div></router-link> |
-      <router-link class="mobile-link" to="/about">🙇‍♂️ <div class="show-on-active">about</div></router-link> |
+      <router-link class="mobile-link" to="/about">🙇‍♂️ <div class="show-on-active">about</div></router-link>
+<!--
+|
       <router-link class="mobile-link" to="/blog">✍️ <div class="show-on-active">blog</div></router-link>
+-->
     </div>
-
     <div id="router-view" >
     <router-view />
 
