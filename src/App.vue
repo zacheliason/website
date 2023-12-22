@@ -159,7 +159,6 @@ h1 {
 
 h1 a:hover, .project:hover {
   color: var(--bright) !important;
-  font-style: italic;
   border-bottom: 2px dotted var(--bright);
 }
 
