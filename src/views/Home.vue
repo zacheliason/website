@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="top-spacer"></div>
-        <h2>Hi! My name is Zach and I recently completed a Bachelor of Science (B.S.) degree in Bioinformatics. I enjoy coding solutions to real-world problems—particularly in <router-link to="/">cancer immunology</router-link> and applying deep-learning approaches to translational research. {{ earth }}</h2>
+        <h2>Hi! My name is Zach and I recently completed a Bachelor of Science (B.S.) degree in Bioinformatics. I enjoy applying deep-learning approaches to translational research and real-world problems—particularly in immunology and oncology. {{ earth }}</h2>
         <h2>See more <router-link to="/about">here »</router-link></h2>
         <div class="bottom-spacer"></div>
     </div>
